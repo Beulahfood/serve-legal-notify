@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07183f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SL Notify">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Serve Legal Notify</title>
+</head>
+<body>
+  <header class="top">
+    <div class="brand-icon">SL</div>
+    <div><h1>Serve Legal Notify</h1><p>Your personal audit companion</p></div>
+    <span class="private">PRIVATE</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AUDIT MONITOR</p>
+      <h2>Know when your audit status changes.</h2>
+      <p class="muted">A starter dashboard for your own account. Automatic portal checking is not connected yet.</p>
+      <button id="testNotification" class="primary">Send test notification</button>
+      <p id="notice" class="notice" role="status">Notifications have not been tested yet.</p>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>How it will work</h2><span class="pill">SETUP</span></div>
+      <div class="step"><span>1</span><div><b>Connect an authorised status source</b><p>We still need to confirm how the portal can safely provide status updates.</p></div></div>
+      <div class="step"><span>2</span><div><b>Compare audit statuses</b><p>Only changes should trigger alerts, avoiding repeated notifications.</p></div></div>
+      <div class="step"><span>3</span><div><b>Notify this iPhone</b><p>Push notifications require a hosted service and permission on your iPhone.</p></div></div>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>Notification examples</h2><span class="pill">PREVIEW</span></div>
+      <article class="audit"><span class="dot green"></span><div><b>Audit approved</b><p>An audit status changed to approved.</p></div><span class="tag">APPROVED</span></article>
+      <article class="audit"><span class="dot amber"></span><div><b>Audit status changed</b><p>One of your audits needs checking.</p></div><span class="tag">UPDATED</span></article>
+    </section>
+    <p class="foot">Personal-use prototype • No Serve Legal login details are collected or stored here.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
